@@ -1,0 +1,55 @@
+OPTICAL PARTICLE SIZE ANALYSER - THIRD-PARTY COMPONENTS
+=======================================================
+
+Pretrained model (Models/stardist/2D_versatile_fluo), and the StarDist method
+(the nanocarbon model Models/stardist/nanocarbon_te is derived from it by
+transfer learning):
+
+  StarDist - Object Detection with Star-convex Shapes
+  https://github.com/stardist/stardist
+  BSD 3-Clause License
+
+  Copyright (c) 2018-2024, Uwe Schmidt, Martin Weigert
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are met:
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+  3. Neither the name of the copyright holder nor the names of its
+     contributors may be used to endorse or promote products derived from
+     this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  POSSIBILITY OF SUCH DAMAGE.
+
+  Please cite: Schmidt et al., MICCAI 2018; Weigert et al., WACV 2020;
+  Weigert & Schmidt, ISBIC 2022 (cited automatically in every report).
+
+Python libraries used (installed by requirements.txt, embedded in the
+Windows executable), each under its own licence:
+  numpy, scipy, scikit-image, tifffile, roifile ..... BSD 3-Clause
+  opencv-python ...................................... Apache 2.0 (OpenCV)
+  onnxruntime ........................................ MIT
+  matplotlib ......................................... Matplotlib licence (PSF-based)
+  Pillow ............................................. MIT-CMU (HPND)
+  ttkbootstrap ....................................... MIT
+  Python, tkinter / Tcl-Tk ........................... PSF / Tcl licence
+Training only (requirements-dl.txt, not distributed in the executable):
+  stardist, csbdeep .................................. BSD 3-Clause
+  tensorflow, tf2onnx ................................ Apache 2.0
+
+Logos (Assets/, Template_Materia_Nova): property of Materia Nova, UMONS and
+the CHIPS department; internal use.

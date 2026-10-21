@@ -1,0 +1,19 @@
+# Tested with Python 3.12 (Linux, Windows) and: numpy 2.4, opencv 4.13,
+# scipy 1.17, scikit-image 0.26, matplotlib 3.10, ttkbootstrap 2.2,
+# pillow 12.1, onnxruntime 1.24 (v1.7.8).
+# Upper bounds: next MAJOR versions may remove what the PSA uses (e.g.
+# ttkbootstrap 3.0 drops the legacy theme and style names still in use).
+numpy>=1.24,<3
+opencv-python>=4.8,<5
+scipy>=1.10,<2
+scikit-image>=0.21,<1
+matplotlib>=3.7,<4
+ttkbootstrap>=1.10,<3
+pillow>=9.5,<13
+tifffile>=2023.1
+roifile>=2023.1
+onnxruntime>=1.16,<2
+# optional: tests, static checks and Windows executable
+pytest
+pyflakes
+pyinstaller>=6.0,<7
